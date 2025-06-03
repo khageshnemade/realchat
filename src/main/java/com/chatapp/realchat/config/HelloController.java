@@ -29,5 +29,10 @@ public class HelloController {
             "author", "Khagesh"
         );
     }
+    
+    // 4. Health check endpoint (for is_port_healthy())
+    @GetMapping("/healthcheck")
+    public Map<String, String> healthCheck() {
+        return Map.of("status", "UP");
+    }
 }
-
