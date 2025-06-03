@@ -17,13 +17,13 @@ public class HelloController {
     
     
     // 2. Welcome user
-    @GetMapping("/welcome")
+    @GetMapping("/welcome1")
     public Map<String, String> welcomeUser() {
         return Map.of("status", "success", "message", "Welcome to the Chat App!");
     }
 
     // 3. App info
-    @GetMapping("/info")
+    @GetMapping("/info1")
     public Map<String, String> getAppInfo() {
         return Map.of(
             "app", "RealChat",
