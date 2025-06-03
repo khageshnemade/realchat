@@ -14,6 +14,8 @@ public class HelloController {
         return Map.of("message", "Hello from RealChat!");
     }
 
+    
+    
     // 2. Welcome user
     @GetMapping("/welcome")
     public Map<String, String> welcomeUser() {
