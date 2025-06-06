@@ -14,7 +14,7 @@ public class ChatController {
         this.messagingTemplate = messagingTemplate;
     }
 
-    @MessageMapping("/chat")
+    @MessageMapping("/chat1")
     public void send(ChatMessage message) {
         messagingTemplate.convertAndSendToUser(
             message.getReceiver().getUserId(),
