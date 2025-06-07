@@ -9,7 +9,7 @@ import java.util.Map;
 public class HelloController {
 
     // 1. Simple greeting
-    @GetMapping("/hello")
+    @GetMapping("/hello1")
     public Map<String, String> sayHello() {
         return Map.of("message", "Hello from RealChat!");
     }
