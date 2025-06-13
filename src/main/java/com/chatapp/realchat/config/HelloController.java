@@ -9,7 +9,7 @@ import java.util.Map;
 public class HelloController {
 
     // 1. Simple greeting
-    @GetMapping("/hello")
+    @GetMapping("/hello1")
     public Map<String, String> sayHello() {
         return Map.of("message", "Hello from RealChat!");
     }
@@ -17,7 +17,7 @@ public class HelloController {
     
     
     // 2. Welcome user
-    @GetMapping("/welcome")
+    @GetMapping("/welcome1")
     public Map<String, String> welcomeUser() {
         return Map.of("status", "success", "message", "Welcome to the Chat App!");
     }
