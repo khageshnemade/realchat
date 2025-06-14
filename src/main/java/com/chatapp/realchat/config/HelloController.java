@@ -8,9 +8,13 @@ import java.util.Map;
 @RestController
 public class HelloController {
 
-  @GetMapping("/time")
+   @GetMapping("/time")
     public Map<String, String> getCurrentTime() {
-        return Map.of("serverTime", LocalDateTime.now().toString());
+        // Intentional change: using HashMap instead of Map.of
+        Map<String, String> response = new HashMap<>();
+        response.put("time", LocalDateTime.now().toString());
+        response.put("timezone", "UTC");
+        return response;
     }
 
     @GetMapping("/echo")
