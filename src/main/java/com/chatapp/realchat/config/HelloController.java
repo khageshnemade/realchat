@@ -8,12 +8,9 @@ import java.util.Map;
 @RestController
 public class HelloController {
 
-     @GetMapping("/time")
+  @GetMapping("/time")
     public Map<String, String> getCurrentTime() {
-       return Map.of(
-            "email", "support@realchat.com",
-            "phone", "+91-9876543210"
-        );
+        return Map.of("serverTime", LocalDateTime.now().toString());
     }
 
     @GetMapping("/echo")
