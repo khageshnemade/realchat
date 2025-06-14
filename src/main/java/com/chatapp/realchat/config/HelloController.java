@@ -8,14 +8,6 @@ import java.util.Map;
 @RestController
 public class HelloController {
 
-   @GetMapping("/time")
-    public Map<String, String> getCurrentTime() {
-        // Intentional change: using HashMap instead of Map.of
-        Map<String, String> response = new HashMap<>();
-        response.put("time", LocalDateTime.now().toString());
-        response.put("timezone", "UTC");
-        return response;
-    }
 
     @GetMapping("/echo")
     public Map<String, String> echoMessage(@RequestParam(required = false) String message) {
