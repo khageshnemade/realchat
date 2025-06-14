@@ -7,28 +7,21 @@ import java.util.Map;
 
 @RestController
 public class HelloController {
-
-    // 1. Simple greeting
-    @GetMapping("/hello1")
-    public Map<String, String> sayHello() {
-        return Map.of("message", "Hello from RealChat!");
+ @GetMapping("/time")
+    public Map<String, String> getCurrentTime() {
+        return Map.of("serverTime", LocalDateTime.now().toString());
     }
 
-    
-    
-    // 2. Welcome user
-    @GetMapping("/welcome1")
-    public Map<String, String> welcomeUser() {
-        return Map.of("status", "success", "message", "Welcome to the Chat App!");
+    @GetMapping("/echo")
+    public Map<String, String> echoMessage(@RequestParam(required = false) String message) {
+        return Map.of("echo", message != null ? message : "No message provided");
     }
 
-    // 3. App info
-    @GetMapping("/info1")
-    public Map<String, String> getAppInfo() {
+    @GetMapping("/contact")
+    public Map<String, String> getContactInfo() {
         return Map.of(
-            "app", "RealChat",
-            "version", "1.0",
-            "author", "Khagesh"
+            "email", "support@realchat.com",
+            "phone", "+91-9876543210"
         );
     }
     
