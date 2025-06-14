@@ -12,3 +12,16 @@ public class HelloController {
 
 
 }
+@RestController
+public class HelloController {
+
+
+}@RestController
+public class HelloController {
+
+
+}@RestController
+public class HelloController {
+
+
+}
