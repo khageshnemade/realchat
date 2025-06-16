@@ -9,5 +9,8 @@ class RealchatAppApplicationTests {
 	@Test
 	void contextLoads() {
 	}
+	@Test
+	void contextchange() {
+	}
 
 }
