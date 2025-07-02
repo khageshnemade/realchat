@@ -1,4 +1,4 @@
-apackage com.chatapp.realchat.config;
+package com.chatapp.realchat.config;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
