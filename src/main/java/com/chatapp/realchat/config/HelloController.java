@@ -1,4 +1,4 @@
-package com.chatapp.realchat.config;
+apackage com.chatapp.realchat.config;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -10,7 +10,7 @@ import java.util.Map;
 @RestController
 public class HelloController {
 
-  @GetMapping("/time")
+  @GetMapping("/time1")
     public Map<String, String> getCurrentTime() {
         return Map.of("serverTime", LocalDateTime.now().toString());
     }
