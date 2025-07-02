@@ -15,7 +15,7 @@ public class HelloController {
         return Map.of("serverTime", LocalDateTime.now().toString());
     }
 
-    @GetMapping("/echo")
+    @GetMapping("/echo1")
     public Map<String, String> echoMessage(@RequestParam(required = false) String message) {
         return Map.of("echo", message != null ? message : "No message provided");
     }
