@@ -10,17 +10,17 @@ import java.util.Map;
 @RestController
 public class HelloController {
 
-  @GetMapping("/time1")
+  @GetMapping("/time")
     public Map<String, String> getCurrentTime() {
         return Map.of("serverTime", LocalDateTime.now().toString());
     }
 
-    @GetMapping("/echo1")
+    @GetMapping("/echo")
     public Map<String, String> echoMessage(@RequestParam(required = false) String message) {
         return Map.of("echo", message != null ? message : "No message provided");
     }
 
-    @GetMapping("/contact")
+    @GetMapping("/contact1")
     public Map<String, String> getContactInfo() {
         return Map.of(
             "email", "support@realchat.com",
